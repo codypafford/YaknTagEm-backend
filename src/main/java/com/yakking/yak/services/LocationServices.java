@@ -26,7 +26,7 @@ public class LocationServices {
         location.setLatitude(locDetails.getLatitude());
         location.setLongitude(locDetails.getLongitude());
         location.setTags(locDetails.getTags());
-        location.setDifficulty(locDetails.getDifficulty());
+        location.setRating(locDetails.getRating());
 
         return locationRepo.save(location);
     }

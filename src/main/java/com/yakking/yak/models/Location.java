@@ -19,19 +19,19 @@ public class Location {
 
     private List<String> tags;
 
-    private int difficulty;
+    private int rating;
 
     public Location() {
 
     }
 
     public Location(String name, String latitude, String longitude, List<String> tags,
-            int difficulty) {
+            int rating) {
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
         this.tags = tags;
-        this.difficulty = difficulty;
+        this.rating = rating;
     }
 
     public String getName() {
@@ -74,17 +74,17 @@ public class Location {
         this.id = id;
     }
 
-    public int getDifficulty() {
-        return difficulty;
+    public int getRating() {
+        return rating;
     }
 
-    public void setDifficulty(int difficulty) {
-        this.difficulty = difficulty;
+    public void setRating(int rating) {
+        this.rating = rating;
     }
 
     @Override
     public String toString() {
-        return "Location [difficulty=" + difficulty + ", id=" + id + ", latitude=" + latitude + ", longitude="
+        return "Location [rating=" + rating + ", id=" + id + ", latitude=" + latitude + ", longitude="
                 + longitude + ", name=" + name + ", tags=" + tags + "]";
     }
 
